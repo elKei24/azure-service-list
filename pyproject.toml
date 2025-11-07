@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling >= 1.27.0", "requests >= 2.32.5"]
+build-backend = "hatchling.build"
+
+[project]
+name = "az_service_list"
+version = "0.0.1"
+authors = [
+    { name = "Elias Keis", email = "elias.keis@maibornwolff.de" },
+]
+description = "Generate a list of Azure services"
+readme = "README.md"
+requires-python = ">=3.14"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.scripts]
+az-service-list = "az_service_list:main"
